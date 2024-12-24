@@ -8,34 +8,34 @@ import MotionGraphic from "./pages/pojects/MotionGraphic";
 import TrailerTeaser from "./pages/pojects/TrailerTeaser";
 import ExplainerVideo from "./pages/pojects/ExplainerVideo";
 import Shortvideo from "./pages/pojects/Shortvideo";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 const App = () => {
 
-  const [isLoaded, setIsLoaded] = useState(false);
+  // const [isLoaded, setIsLoaded] = useState(false);
 
-  useEffect(() => {
-    const handleLoad = () => {
-      setIsLoaded(true); // Set the loading state to false when assets are loaded
-    };
+  // useEffect(() => {
+  //   const handleLoad = () => {
+  //     setIsLoaded(true); // Set the loading state to false when assets are loaded
+  //   };
 
-    // Listen for the window load event
-    window.addEventListener("load", handleLoad);
+  //   // Listen for the window load event
+  //   window.addEventListener("load", handleLoad);
 
-    return () => {
-      // Cleanup the event listener
-      window.removeEventListener("load", handleLoad);
-    };
-  }, []);
+  //   return () => {
+  //     // Cleanup the event listener
+  //     window.removeEventListener("load", handleLoad);
+  //   };
+  // }, []);
 
-  if (!isLoaded) {
-    // Show the loader while loading
-    return (
-      <div className="flex items-center justify-center h-screen bg-gray-100">
-        <img className="w-full h-full object-cover" src="https://i.pinimg.com/originals/4a/8b/34/4a8b34a01d5eb5a134ebe661cb1d1cff.gif" alt="" />
-      </div>
-    );
-  }
+  // if (!isLoaded) {
+  //   // Show the loader while loading
+  //   return (
+  //     <div className="flex items-center justify-center h-screen bg-gray-100">
+  //       <img className="w-full h-full object-cover" src="https://i.pinimg.com/originals/4a/8b/34/4a8b34a01d5eb5a134ebe661cb1d1cff.gif" alt="" />
+  //     </div>
+  //   );
+  // }
   return (
     <div className="bg-mainColor">
       <Routes>
