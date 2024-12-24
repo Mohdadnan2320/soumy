@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Route } from "react-router";
 import { Routes } from "react-router";
-import Landing from "./pages/mainPage/Landing"
+import Landing from "./pages/mainPage/landing";
 import About from "./pages/About";
 import Podcast from "./pages/pojects/Podcast";
 import MotionGraphic from "./pages/pojects/MotionGraphic";

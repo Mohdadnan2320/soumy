@@ -122,10 +122,10 @@ const Hero = () => {
     });
   });
   return (
-    <div className=" p-5">
-      <div className="lg:flex lg:justify-center xl:flex xl:justify-center ">
-        <div className="lg:w-1/2 lg:h-full">
-          <div className="min-h-32 bg-soumyName bg-no-repeat bg-contain my-5 md:mt-10 md:h-[25vh] lg:h-[30vh] lg:mt-14  heading 2xl:h-[40vh]"></div>
+    <div className=" p-5 w-full h-screen ">
+       <div className="lg:flex lg:justify-center xl:flex xl:justify-center ">
+        <div className="lg:w-1/2 lg:h-screen">
+          <div className="min-h-32 bg-soumyName bg-no-repeat bg-contain my-5 md:mt-10 md:h-[25vh] lg:h-[30vh] lg:mt-14 xl:h-[35vh] 2xl:h-[30vh]"></div>
           <div className="hidden md:block lg:block mb-5">
             <p className="text-right text-xs font-SequelSansMedium md:text-xl xl:text-lg 2xl:text-3xl">
               Welcome! I&apos;m a skilled video editor, <br /> designer, and
@@ -158,8 +158,8 @@ const Hero = () => {
           </div>
         </div>
         <div className="hidden lg:relative lg:block w-1/2">
-          <div className="min-h-32 bg-photoWithBg bg-no-repeat bg-cover lg:h-full lg:bg-contain xl:h-full  xl:bg-cover 2xl:bg-cover"></div>
-          <div className="lg:h-52 lg:absolute lg:bottom-0 lg:left-3 lg:flex lg:flex-col lg:justify-around  xl:bottom-0 xl:h-60  xl:left-8 ">
+          <div className="min-h-32 bg-photoWithBg bg-no-repeat bg-cover lg:h-full lg:bg-contain xl:h-full  xl:bg-cover 2xl:h-screen 2xl:bg-contain"></div>
+          <div className="lg:h-52 lg:absolute lg:bottom-0 lg:left-3 lg:flex lg:flex-col lg:justify-around  xl:bottom-0 xl:h-60  xl:left-8 2xl:bottom-48 2xl:left-10">
             <div className="w-16 h-16 bg-black rounded-full overflow-hidden ">
               <img
                 className="w-full h-full object-cover object-top"
@@ -182,11 +182,11 @@ const Hero = () => {
               />
             </div>
           </div>
-          <div className="bg-secondryColor w-14 h-14 absolute top-0 right-1 rounded-full xl:top-3 xl:right-3">
+          <div className="bg-secondryColor w-14 h-14 absolute top-0 right-1 rounded-full xl:top-3 xl:right-3 2xl:top-8 2xl:right-11">
             <img src="/white smile.png " alt="" />
           </div>
         </div>
-      </div>
+      </div> 
       <div className="mb-5 md:hidden lg:hidden">
         <p className="text-right text-xs font-SequelSansMedium ">
           Welcome! I&apos;m a skilled video editor, designer, and content
@@ -273,3 +273,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
