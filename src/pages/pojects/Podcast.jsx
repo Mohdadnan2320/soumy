@@ -1,11 +1,15 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectCard from "../../components/ProjectCard";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
 
 const Podcast = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.pathname]);
   const data = {
     id: 0,
     title: "podCast interview",
