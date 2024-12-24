@@ -68,12 +68,12 @@ const App = () => {
     <div className="bg-mainColor">
       <Routes>
       <Route path="/" element={<Landing />}></Route>
-        <Route path="about" element={<About />}></Route>
-        <Route path="podcast" element={<Podcast />}></Route>
-        <Route path="motion_graphic" element={<MotionGraphic />}></Route>
-        <Route path="trailer_teaser" element={<TrailerTeaser />}></Route>
-        <Route path="explainer_video" element={<ExplainerVideo />}></Route>
-        <Route path="short_video" element={<Shortvideo />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/podcast" element={<Podcast />}></Route>
+        <Route path="/motion_graphic" element={<MotionGraphic />}></Route>
+        <Route path="/trailer_teaser" element={<TrailerTeaser />}></Route>
+        <Route path="/explainer_video" element={<ExplainerVideo />}></Route>
+        <Route path="/short_video" element={<Shortvideo />}></Route>
       </Routes>
     </div>
   );
