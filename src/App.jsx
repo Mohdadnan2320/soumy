@@ -1,6 +1,7 @@
 import { Route } from "react-router";
 import { Routes } from "react-router";
-import Landing from "./pages/landingPage/landing";
+// import Landing from "./pages/landingPage/Landing";
+import Landing from "./pages/mainPage/Landing"
 import About from "./pages/About";
 import Podcast from "./pages/pojects/Podcast";
 import MotionGraphic from "./pages/pojects/MotionGraphic";
@@ -8,7 +9,6 @@ import TrailerTeaser from "./pages/pojects/TrailerTeaser";
 import ExplainerVideo from "./pages/pojects/ExplainerVideo";
 import Shortvideo from "./pages/pojects/Shortvideo";
 import { useEffect, useState } from "react";
-
 
 const App = () => {
 
@@ -39,7 +39,8 @@ const App = () => {
   return (
     <div className="bg-mainColor">
       <Routes>
-        <Route path="/" element={<Landing />}></Route>
+      <Route path="/" element={<Landing />}></Route>
+        {/* <Route path="/" element={<Landing />}></Route> */}
         <Route path="about" element={<About />}></Route>
         <Route path="podcast" element={<Podcast />}></Route>
         <Route path="motion_graphic" element={<MotionGraphic />}></Route>
