@@ -52,11 +52,11 @@ const Slider = () => {
       }}
       modules={[Autoplay,EffectCoverflow, Navigation]}
       >
-        <SwiperSlide><Link to={'/motion_graphic'}><img className='w-full object-cover rounded-[5vw]' src={B01} alt="motion graphic" /></Link></SwiperSlide>
-        <SwiperSlide><Link to={'/podcast'}><img className='w-full object-cover rounded-[5vw]' src={B02} alt="podcast" /></Link></SwiperSlide>
-        <SwiperSlide><Link to={'/trailer_teaser'}><img className='w-full object-cover rounded-[5vw]' src={B03} alt="trailer_teaser" /></Link></SwiperSlide>
-        <SwiperSlide><Link to={'/explainer_video'}><img className='w-full object-cover rounded-[5vw]' src={B04} alt="explainer_video" /></Link></SwiperSlide>
-        <SwiperSlide><Link to={'/short_video'}><img className='w-full object-cover rounded-[5vw]' src={B05} alt="short_video" /></Link></SwiperSlide>
+        <SwiperSlide><Link to={'motion_graphic'}><img className='w-full object-cover rounded-[5vw]' src={B01} alt="motion graphic" /></Link></SwiperSlide>
+        <SwiperSlide><Link to={'podcast'}><img className='w-full object-cover rounded-[5vw]' src={B02} alt="podcast" /></Link></SwiperSlide>
+        <SwiperSlide><Link to={'trailer_teaser'}><img className='w-full object-cover rounded-[5vw]' src={B03} alt="trailer_teaser" /></Link></SwiperSlide>
+        <SwiperSlide><Link to={'explainer_video'}><img className='w-full object-cover rounded-[5vw]' src={B04} alt="explainer_video" /></Link></SwiperSlide>
+        <SwiperSlide><Link to={'short_video'}><img className='w-full object-cover rounded-[5vw]' src={B05} alt="short_video" /></Link></SwiperSlide>
 
         <div className='slider-nav relative bottom-0 z-50 mt-10 flex items-center justify-center gap-10'>
         <div className='swiper-button-prev cursor-pointer border border-black rounded-full'>
