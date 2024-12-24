@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+    font-family: "Sequel Sans";
+    font-weight: 100;
+    src: url("assets/Sequel\ Sans/");
+} */
+
+@font-face {
+    font-family: "Sequel Sans Heavy Disp";
+    src: url("/Sequel Sans Heavy Disp.ttf");
+}
+
+@font-face {
+    font-family: "Sequel Sans Medium Body";
+    src: url("/Sequel Sans Medium Body.ttf");
+}
+
+@layer utilities {
+    @media (min-width: 1920px) and (max-height: 1080px) {
+      .only-1920x1080 {
+        background-color: #38a169; /* Green */
+      }
+    }
+  }
