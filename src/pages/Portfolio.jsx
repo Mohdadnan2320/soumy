@@ -7,10 +7,10 @@ const Portfolio = () => {
     <div className=" my-5 p-5 lg:h-auto lg:w-full">
       <div className="hidden lg:block w-full   border-none">
       <div className="w-full h-full">
-        <h1 className="text-[40vh] text-center tracking-tight font-SequelSans">
+        <h1 className="text-[25vw] text-center tracking-tight font-SequelSans ">
           portfolio
         </h1>
-        <div className="relative bottom-28 overflow-hidden">
+        <div className="relative bottom-32 overflow-hidden xl:bottom-32">
           <Slider />
         </div>
         {/* <div className="absolute bottom-[13vh] left-0 hover:z-50 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">

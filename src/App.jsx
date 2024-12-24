@@ -8,64 +8,64 @@ import MotionGraphic from "./pages/pojects/MotionGraphic";
 import TrailerTeaser from "./pages/pojects/TrailerTeaser";
 import ExplainerVideo from "./pages/pojects/ExplainerVideo";
 import Shortvideo from "./pages/pojects/Shortvideo";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 const App = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [loadingProgress, setLoadingProgress] = useState(0);
+  // const [isLoaded, setIsLoaded] = useState(false);
+  // const [loadingProgress, setLoadingProgress] = useState(0);
 
-  useEffect(() => {
-    const loadAssets = async () => {
-      const totalAssets = document.querySelectorAll("img, link[rel='stylesheet'], script").length;
-      let loadedAssets = 0;
+  // useEffect(() => {
+  //   const loadAssets = async () => {
+  //     const totalAssets = document.querySelectorAll("img, link[rel='stylesheet'], script").length;
+  //     let loadedAssets = 0;
 
-      const updateProgress = () => {
-        loadedAssets += 1;
-        setLoadingProgress(Math.round((loadedAssets / totalAssets) * 100));
-        if (loadedAssets === totalAssets) {
-          setIsLoaded(true);
-        }
-      };
+  //     const updateProgress = () => {
+  //       loadedAssets += 1;
+  //       setLoadingProgress(Math.round((loadedAssets / totalAssets) * 100));
+  //       if (loadedAssets === totalAssets) {
+  //         setIsLoaded(true);
+  //       }
+  //     };
 
-      const loadImage = (src) =>
-        new Promise((resolve) => {
-          const img = new Image();
-          img.onload = resolve;
-          img.onerror = resolve;
-          img.src = src;
-        });
+  //     const loadImage = (src) =>
+  //       new Promise((resolve) => {
+  //         const img = new Image();
+  //         img.onload = resolve;
+  //         img.onerror = resolve;
+  //         img.src = src;
+  //       });
 
-      const images = Array.from(document.querySelectorAll("img")).map((img) => img.src);
-      const loadImages = images.map(loadImage);
+  //     const images = Array.from(document.querySelectorAll("img")).map((img) => img.src);
+  //     const loadImages = images.map(loadImage);
 
-      await Promise.all(loadImages);
+  //     await Promise.all(loadImages);
 
-      Array.from(document.querySelectorAll("link[rel='stylesheet'], script")).forEach((resource) => {
-        const clone = resource.cloneNode(true);
-        clone.onload = updateProgress;
-        clone.onerror = updateProgress;
-        document.head.appendChild(clone);
-      });
+  //     Array.from(document.querySelectorAll("link[rel='stylesheet'], script")).forEach((resource) => {
+  //       const clone = resource.cloneNode(true);
+  //       clone.onload = updateProgress;
+  //       clone.onerror = updateProgress;
+  //       document.head.appendChild(clone);
+  //     });
 
-      // Fallback in case some assets are missing
-      setTimeout(() => {
-        setIsLoaded(true);
-      }, 5000); // Adjust timeout if needed
-    };
+  //     // Fallback in case some assets are missing
+  //     setTimeout(() => {
+  //       setIsLoaded(true);
+  //     }, 5000); // Adjust timeout if needed
+  //   };
 
-    loadAssets();
-  }, []);
+  //   loadAssets();
+  // }, []);
 
-  if (!isLoaded) {
-    return (
-      <div className="flex items-center justify-center h-screen bg-gray-900 text-white text-5xl">
-        {loadingProgress}%
-      </div>
-    );
-  }
+  // if (!isLoaded) {
+  //   return (
+  //     <div className="flex items-center justify-center h-screen bg-gray-900 text-white text-5xl">
+  //       {loadingProgress}%
+  //     </div>
+  //   );
+  // }
 
   return (
-    <div className="bg-mainColor">
+    <div className="bg-mainColor scroll-smooth">
       <Routes>
       <Route path="/" element={<Landing />}></Route>
         <Route path="/about" element={<About />}></Route>

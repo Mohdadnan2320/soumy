@@ -122,17 +122,17 @@ const Hero = () => {
     });
   });
   return (
-    <div className=" p-5 ">
+    <div className=" p-5">
       <div className="lg:flex lg:justify-center xl:flex xl:justify-center ">
         <div className="lg:w-1/2 lg:h-full">
-          <div className="min-h-32 bg-soumyName bg-no-repeat bg-contain my-5 md:mt-10 md:h-[25vh] lg:h-[30vh] lg:mt-14 heading"></div>
+          <div className="min-h-32 bg-soumyName bg-no-repeat bg-contain my-5 md:mt-10 md:h-[25vh] lg:h-[30vh] lg:mt-14  heading 2xl:h-[40vh]"></div>
           <div className="hidden md:block lg:block mb-5">
-            <p className="text-right text-xs font-SequelSansMedium md:text-xl xl:text-lg">
+            <p className="text-right text-xs font-SequelSansMedium md:text-xl xl:text-lg 2xl:text-3xl">
               Welcome! I&apos;m a skilled video editor, <br /> designer, and
               content creator, ready to <br /> bring your vision alive.
             </p>
           </div>
-          <div className="hidden lg:flex justify-between mt-20 space-x-5 p-2 xl:mt-28 xl:p-1">
+          <div className="hidden lg:flex justify-between mt-12 space-x-5 p-2 xl:mt-28 xl:p-1">
             <div className="">
               <div className="flex justify-end">
                 <span className="text-2xl font-bold xl:text-3xl">+</span>
@@ -157,9 +157,9 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hidden lg:relative lg:block  w-1/2  ">
-          <div className="min-h-32 bg-photoWithBg bg-no-repeat bg-contain  lg:my-2 lg:-ml-2 lg:h-[85vh] lg:bg-cover xl:my-0 xl:-ml-0 xl:h-full  xl:bg-cover"></div>
-          <div className="lg:h-52 lg:absolute lg:bottom-3 lg:left-2 lg:flex lg:flex-col lg:justify-around  xl:bottom-0 xl:h-60  xl:left-8 ">
+        <div className="hidden lg:relative lg:block w-1/2">
+          <div className="min-h-32 bg-photoWithBg bg-no-repeat bg-cover lg:h-full lg:bg-contain xl:h-full  xl:bg-cover 2xl:bg-cover"></div>
+          <div className="lg:h-52 lg:absolute lg:bottom-0 lg:left-3 lg:flex lg:flex-col lg:justify-around  xl:bottom-0 xl:h-60  xl:left-8 ">
             <div className="w-16 h-16 bg-black rounded-full overflow-hidden ">
               <img
                 className="w-full h-full object-cover object-top"
@@ -182,7 +182,7 @@ const Hero = () => {
               />
             </div>
           </div>
-          <div className="bg-secondryColor w-14 h-14 absolute top-2 right-1 rounded-full xl:top-3 xl:right-3">
+          <div className="bg-secondryColor w-14 h-14 absolute top-0 right-1 rounded-full xl:top-3 xl:right-3">
             <img src="/white smile.png " alt="" />
           </div>
         </div>
